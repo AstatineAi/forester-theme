@@ -23,6 +23,11 @@
         <title>
           <xsl:value-of select="/f:tree/f:frontmatter/f:title[@text]" />
         </title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/default.min.css"/>
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/languages/cpp.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/languages/haskell.min.js"></script>
+        <script>hljs.highlightAll();</script>
       </head>
       <body>
         <ninja-keys placeholder="Start typing a note title or ID"></ninja-keys>
